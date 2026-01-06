@@ -1,7 +1,7 @@
 const shopData = {
-    "Diamond Barber": [{n: "Saç & Sakal", p: 400}, {n: "Cilt Bakımı", p: 300}, {n: "Boya & Kesim", p: 700}],
-    "VIP Kuaförü": [{n: "Boya & Kesim", p: 800}, {n: "Saç Bakımı", p: 500}],
-    "Efsane Stil": [{n: "Klasik Kesim", p: 250}, {n: "Fön", p: 100}]
+    "Diamond Barber": [{n: "Saç", p: 400}, {n: "Cilt Bakımı", p: 300}, {n: "Boya & Kesim", p: 700}, {n: "Sakal", p: 200}],
+    "VIP Kuaförü": [{n: "Boya", p: 600}, {n: "Saç Bakımı", p: 500}, {n: "Kesim", p: 500}],
+    "Efsane Stil": [{n: "Klasik Kesim", p: 250}, {n: "Fön", p: 100}, {n: "Sakal", p: 100}]
 };
 
 function updateServices() {
@@ -61,5 +61,6 @@ function display() {
         `;
     });
 }
+
 
 window.onload = display;
