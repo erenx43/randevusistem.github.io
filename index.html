@@ -1,0 +1,60 @@
+
+<div class="main-wrapper">
+    <div class="container">
+        <aside class="form-side">
+            <div class="brand">
+                <i class="icon">✂</i>
+                <h1>HAIR PORTAL</h1>
+                <p>Premium Randevu Sistemi</p>
+                <link rel="stylesheet" href="still1.css">
+            </div>
+
+            <form id="appointmentForm">
+                <div class="field">
+                    <label>SALON SEÇİMİ</label>
+                    <select id="shopName" onchange="updateServices()" required>
+                        <option value="" disabled selected>Hangi salona gitmek istersiniz?</option>
+                        <option value="Diamond Barber">Diamond Barber & Spa</option>
+                        <option value="Zümrüt Bayan Kuaförü">Zümrüt Güzellik Sarayı</option>
+                        <option value="Efsane Stil">Efsane Stil Studio</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label>MÜŞTERİ BİLGİSİ</label>
+                    <input type="text" id="fullName" placeholder="Adınız ve Soyadınız" required>
+                </div>
+
+                <div class="field">
+                    <label>HİZMET VE ÜCRET</label>
+                    <select id="service" required>
+                        <option value="" disabled selected>Önce dükkan seçin...</option>
+                    </select>
+                </div>
+
+                <div class="grid-inputs">
+                    <div class="field">
+                        <label>TARİH</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="field">
+                        <label>SAAT</label>
+                        <input type="time" id="time" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">RANDEVUYU ONAYLA</button>
+            </form>
+        </aside>
+
+        <main class="list-side">
+            <div class="list-header">
+                <h2>Aktif Randevularınız</h2>
+                <span id="count" class="badge">0</span>
+            </div>
+            <div id="listItems" class="appointment-grid">
+                </div>
+        </main>
+    </div>
+</div>
+<script src="script.js"></script>
